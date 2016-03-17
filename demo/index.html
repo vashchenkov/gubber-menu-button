@@ -16,7 +16,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
 
-  <title>paper-menu-button</title>
+  <title>gubber-menu-button</title>
 
   <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
 
@@ -29,7 +29,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <link rel="import" href="../../paper-icon-button/paper-icon-button.html">
   <link rel="import" href="../../paper-styles/demo-pages.html">
 
-  <link rel="import" href="../paper-menu-button.html">
+  <link rel="import" href="../gubber-menu-button.html">
 
   <style>
     paper-button {
@@ -42,7 +42,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       display: block;
     }
 
-    paper-menu-button {
+    gubber-menu-button {
       margin: auto;
     }
 
@@ -69,14 +69,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <div>
         <h4>Paper Icon Button + Paper Menu</h4>
         <div class="horizontal-section">
-          <paper-menu-button>
+          <gubber-menu-button>
             <paper-icon-button icon="menu" class="dropdown-trigger" alt="menu"></paper-icon-button>
             <paper-menu class="dropdown-content">
               <template is="dom-repeat" items="[[letters]]" as="letter">
                 <paper-item>[[letter]]</paper-item>
               </template>
             </paper-menu>
-          </paper-menu-button>
+          </gubber-menu-button>
         </div>
       </div>
     </div>
@@ -85,14 +85,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <div>
         <h4>Paper Menu with multi selection</h4>
         <div class="horizontal-section">
-          <paper-menu-button ignore-select>
+          <gubber-menu-button ignore-select>
             <paper-icon-button icon="menu" class="dropdown-trigger" alt="multi select"></paper-icon-button>
             <paper-menu class="dropdown-content" multi>
               <template is="dom-repeat" items="[[letters]]" as="letter">
                 <paper-item>[[letter]]</paper-item>
               </template>
             </paper-menu>
-          </paper-menu-button>
+          </gubber-menu-button>
         </div>
       </div>
     </div>
@@ -101,14 +101,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <div>
         <h4>Disabled</h4>
         <div class="horizontal-section">
-          <paper-menu-button disabled>
+          <gubber-menu-button disabled>
             <paper-icon-button icon="menu" class="dropdown-trigger" alt="menu"></paper-icon-button>
             <paper-menu class="dropdown-content">
               <template is="dom-repeat" items="[[letters]]" as="letter">
                 <paper-item>[[letter]]</paper-item>
               </template>
             </paper-menu>
-          </paper-menu-button>
+          </gubber-menu-button>
         </div>
       </div>
     </div>
@@ -117,14 +117,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <div>
         <h4>Alternate Alignment</h4>
         <div class="horizontal-section">
-          <paper-menu-button vertical-align="bottom" horizontal-align="right">
+          <gubber-menu-button vertical-align="bottom" horizontal-align="right">
             <paper-icon-button icon="menu" class="dropdown-trigger" alt="bottom align"></paper-icon-button>
             <paper-menu class="dropdown-content">
               <template is="dom-repeat" items="[[letters]]" as="letter">
                 <paper-item>[[letter]]</paper-item>
               </template>
             </paper-menu>
-          </paper-menu-button>
+          </gubber-menu-button>
         </div>
       </div>
     </div>
@@ -133,7 +133,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <div>
         <h4>Alternate Button</h4>
         <div class="horizontal-section">
-          <paper-menu-button>
+          <gubber-menu-button>
             <paper-button class="dropdown-trigger" raised>
               <iron-icon icon="check"></iron-icon>
               <span>Dinosaurs</span>
@@ -143,7 +143,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <paper-item>[[dinosaur]]</paper-item>
               </template>
             </paper-menu>
-          </paper-menu-button>
+          </gubber-menu-button>
         </div>
       </div>
     </div>
@@ -152,7 +152,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <div>
         <h4>Alternate Button with visible content</h4>
         <div class="horizontal-section">
-          <paper-menu-button show-content >
+          <gubber-menu-button show-content >
             <paper-button class="dropdown-trigger" raised>
               <iron-icon icon="check"></iron-icon>
               <span>Dinosaurs</span>
@@ -162,7 +162,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <paper-item>[[dinosaur]]</paper-item>
               </template>
             </paper-menu>
-          </paper-menu-button>
+          </gubber-menu-button>
         </div>
       </div>
     </div>
@@ -171,10 +171,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <div>
         <h4>Alternate Content</h4>
         <div class="horizontal-section">
-          <paper-menu-button vertical-align="bottom">
+          <gubber-menu-button vertical-align="bottom">
             <paper-icon-button class="dropdown-trigger" icon="polymer" alt="polymer"></paper-icon-button>
             <iron-image class="dropdown-content" src="../../iron-image/demo/polymer.svg"></iron-image>
-          </paper-menu-button>
+          </gubber-menu-button>
         </div>
       </div>
     </div>

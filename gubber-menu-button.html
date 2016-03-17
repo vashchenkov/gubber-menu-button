@@ -16,12 +16,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../neon-animation/animations/fade-out-animation.html">
 <link rel="import" href="../paper-material/paper-material.html">
 <link rel="import" href="../paper-styles/default-theme.html">
-<link rel="import" href="paper-menu-button-animations.html">
+<link rel="import" href="gubber-menu-button-animations.html">
 
 <!--
 Material design: [Dropdown buttons](https://www.google.com/design/spec/components/buttons.html#buttons-dropdown-buttons)
 
-`paper-menu-button` allows one to compose a designated "trigger" element with
+`gubber-menu-button` allows one to compose a designated "trigger" element with
 another element that represents "content", to create a dropdown menu that
 displays the "content" when the "trigger" is clicked.
 
@@ -29,20 +29,20 @@ The child element with the class `dropdown-trigger` will be used as the
 "trigger" element. The child element with the class `dropdown-content` will be
 used as the "content" element.
 
-The `paper-menu-button` is sensitive to its content's `iron-select` events. If
-the "content" element triggers an `iron-select` event, the `paper-menu-button`
+The `gubber-menu-button` is sensitive to its content's `iron-select` events. If
+the "content" element triggers an `iron-select` event, the `gubber-menu-button`
 will close automatically.
 
 Example:
 
-    <paper-menu-button>
+    <gubber-menu-button>
       <paper-icon-button icon="menu" class="dropdown-trigger"></paper-icon-button>
       <paper-menu class="dropdown-content">
         <paper-item>Share</paper-item>
         <paper-item>Settings</paper-item>
         <paper-item>Help</paper-item>
       </paper-menu>
-    </paper-menu-button>
+    </gubber-menu-button>
 
 ### Styling
 
@@ -50,17 +50,17 @@ The following custom properties and mixins are also available for styling:
 
 Custom property | Description | Default
 ----------------|-------------|----------
-`--paper-menu-button-dropdown-background` | Background color of the paper-menu-button dropdown | `--primary-background-color`
-`--paper-menu-button` | Mixin applied to the paper-menu-button | `{}`
-`--paper-menu-button-disabled` | Mixin applied to the paper-menu-button when disabled | `{}`
-`--paper-menu-button-dropdown` | Mixin applied to the paper-menu-button dropdown | `{}`
-`--paper-menu-button-content` | Mixin applied to the paper-menu-button content | `{}`
+`--gubber-menu-button-dropdown-background` | Background color of the gubber-menu-button dropdown | `--primary-background-color`
+`--gubber-menu-button` | Mixin applied to the gubber-menu-button | `{}`
+`--gubber-menu-button-disabled` | Mixin applied to the gubber-menu-button when disabled | `{}`
+`--gubber-menu-button-dropdown` | Mixin applied to the gubber-menu-button dropdown | `{}`
+`--gubber-menu-button-content` | Mixin applied to the gubber-menu-button content | `{}`
 
 @hero hero.svg
 @demo demo/index.html
 -->
 
-<dom-module id="paper-menu-button">
+<dom-module id="gubber-menu-button">
   <template>
     <style>
       :host {
@@ -69,14 +69,14 @@ Custom property | Description | Default
         padding: 8px;
         outline: none;
 
-        @apply(--paper-menu-button);
+        @apply(--gubber-menu-button);
       }
 
       :host([disabled]) {
         cursor: auto;
         color: var(--disabled-text-color);
 
-        @apply(--paper-menu-button-disabled);
+        @apply(--gubber-menu-button-disabled);
       }
 
       :host([vertical-align="top"]) paper-material {
@@ -100,14 +100,14 @@ Custom property | Description | Default
       }
 
       iron-dropdown {
-        @apply(--paper-menu-button-dropdown);
+        @apply(--gubber-menu-button-dropdown);
       }
 
       .dropdown-content {
         border-radius: 2px;
-        background-color: var(--paper-menu-button-dropdown-background, --primary-background-color);
+        background-color: var(--gubber-menu-button-dropdown-background, --primary-background-color);
 
-        @apply(--paper-menu-button-content);
+        @apply(--gubber-menu-button-content);
       }
     </style>
 
@@ -139,7 +139,7 @@ Custom property | Description | Default
       'use strict';
 
       var PaperMenuButton = Polymer({
-        is: 'paper-menu-button',
+        is: 'gubber-menu-button',
 
         /**
          * Fired when the dropdown opens.
@@ -291,7 +291,7 @@ Custom property | Description | Default
 
           /**
            * This is the element intended to be bound as the focus target
-           * for the `iron-dropdown` contained by `paper-menu-button`.
+           * for the `iron-dropdown` contained by `gubber-menu-button`.
            */
           _dropdownContent: {
             type: Object
@@ -376,8 +376,8 @@ Custom property | Description | Default
         },
 
         /**
-         * When the dropdown opens, the `paper-menu-button` fires `paper-open`.
-         * When the dropdown closes, the `paper-menu-button` fires `paper-close`.
+         * When the dropdown opens, the `gubber-menu-button` fires `paper-open`.
+         * When the dropdown closes, the `gubber-menu-button` fires `paper-close`.
          *
          * @param {boolean} opened True if the dropdown is opened, otherwise false.
          * @param {boolean} oldOpened The previous value of `opened`.

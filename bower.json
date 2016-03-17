@@ -1,5 +1,5 @@
 {
-  "name": "paper-menu-button",
+  "name": "gubber-menu-button",
   "version": "1.0.4",
   "description": "A material design element that composes a trigger and a dropdown menu",
   "authors": [
@@ -12,14 +12,14 @@
     "menu",
     "button"
   ],
-  "main": "paper-menu-button.html",
+  "main": "gubber-menu-button.html",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/PolymerElements/paper-menu-button.git"
+    "url": "git://github.com/vashchenkov/gubber-menu-button.git"
   },
   "license": "http://polymer.github.io/LICENSE.txt",
-  "homepage": "https://github.com/PolymerElements/paper-menu-button",
+  "homepage": "https://github.com/PolymerElements/gubber-menu-button",
   "dependencies": {
     "polymer": "Polymer/polymer#^1.1.0",
     "iron-a11y-keys-behavior": "PolymerElements/iron-a11y-keys-behavior#^1.0.0",

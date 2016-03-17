@@ -11,7 +11,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>paper-menu-button basic tests</title>
+  <title>gubber-menu-button basic tests</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
@@ -19,7 +19,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <script src="../../test-fixture/test-fixture-mocha.js"></script>
   <script src="../../iron-test-helpers/mock-interactions.js"></script>
 
-  <link rel="import" href="../paper-menu-button.html">
+  <link rel="import" href="../gubber-menu-button.html">
   <link rel="import" href="../../test-fixture/test-fixture.html">
 
 </head>
@@ -27,28 +27,28 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <test-fixture id="TrivialMenuButton">
     <template>
-      <paper-menu-button no-animations>
+      <gubber-menu-button no-animations>
         <span class="dropdown-trigger">trigger</span>
         <span class="dropdown-content">content</span>
-      </paper-menu-button>
+      </gubber-menu-button>
     </template>
   </test-fixture>
 
   <test-fixture id="TwoMenuButtons">
     <template>
-      <paper-menu-button no-animations>
+      <gubber-menu-button no-animations>
         <span class="dropdown-trigger">trigger</span>
         <span class="dropdown-content">content</span>
-      </paper-menu-button>
-      <paper-menu-button no-animations>
+      </gubber-menu-button>
+      <gubber-menu-button no-animations>
         <span class="dropdown-trigger">trigger</span>
         <span class="dropdown-content">content</span>
-      </paper-menu-button>
+      </gubber-menu-button>
     </template>
   </test-fixture>
 
   <script>
-    suite('<paper-menu-button>', function() {
+    suite('<gubber-menu-button>', function() {
       var menuButton;
       var trigger;
       var content;
